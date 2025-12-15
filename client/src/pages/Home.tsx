@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, Ruler, Scissors, Layers, Truck } from "lucide-react";
 import { motion } from "framer-motion";
+import PriceCalculator from "@/components/PriceCalculator";
 
 export default function Home() {
   const fadeIn = {
@@ -210,6 +211,22 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Calculator Section */}
+      <section className="py-20 bg-gray-50 border-y border-border" id="calculator">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-industrial-grey">ESTIMATION EN LIGNE</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Calculez instantanément le prix de vos découpes rectangulaires simples. 
+              Pour les formes complexes, demandez un devis complet.
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <PriceCalculator />
           </div>
         </div>
       </section>
